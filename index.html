@@ -11,6 +11,7 @@
       top: 0;
       width: 100%;
       height: 13%;
+      background-color: #A4DCE1 !important;
     }    
 
     body {
@@ -29,7 +30,6 @@
 
 
     #header {
-      background-color: #A4DCE1;
       overflow: hidden;
       margin-bottom: 5px;
 
@@ -52,7 +52,7 @@
     }
     
     nav > ul {
-      width: 45vw;
+      width: 35vw;
       display: flex;
       flex-direction: row;
       justify-content: space-around;
@@ -99,8 +99,6 @@
     }
      
     #form {
-      background-color: #e1f1f5
-      margin-top: 20px;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -175,7 +173,6 @@
       width: 100%;
       text-transform: uppercase;
       font-weight: 50;
-      align-items: left;
     }
 
     #small-funiture {
@@ -207,6 +204,7 @@
       display: table-cell;
       border-radius: 3px;
       border: 1px grey solid;
+      text-align: center;
     }
 
     #inner-wrap-prices {
@@ -222,7 +220,7 @@
     
     .buy {
       position: relative;
-      left: 25%;
+      left: 0%;
       border-radius: 3px;
       border: 1px grey solid;
       text-transform: uppercase;
@@ -230,11 +228,6 @@
       background-color: #ffffe6;
     }
 
-
-    .the-price {
-      position: relative;
-      left: 22%;
-    }
 
     #wrap-prices {
       position: relative;
@@ -252,22 +245,13 @@
 
       #nav-bar {
         float: right;
-        right: 10%;
+        right: 4%;
       }
 
       li {
         margin-left: 5%; 
       }
 
-      .the-price {
-      position: relative;
-      left: 10%;
-      }
-
-      .buy {
-        position: relative;
-        left: 10%;
-      }
       #small-funiture {
         background-color: #e1f1f5;
         margin: 5px;
@@ -276,10 +260,26 @@
         background-color: #e1f1f5;
         margin: 5px;
       }
-       #large-funiture {
+      #large-funiture {
         background-color: #e1f1f5;
         margin: 5px;
       }
+      #nav-bar {
+        float: right;
+        position: relative;
+        top:-30px;
+        font-size: 13px;
+     }
+
+      nav > ul {
+        width: 60vw;
+      }
+
+      #info-wrap {
+        margin-right: 10%;
+        margin-left: 10%;
+      }
+
     }
 
 
@@ -288,13 +288,13 @@
 <div id="page-wrapper">
   <header id="header" class="sticky">
     <div class="logo-name" >
-      <img id="header-img" src="https://drive.google.com/file/d/1p2rMu7qAa0PYQyAaQbRYE95jxHe9agId/view?usp=sharing" alt="Drawing of chair">
+      <img id="header-img" src="https://raw.githubusercontent.com/linneat/Pine-wood-furniture/master/chair.png">
       <h1 id="name">Pine Furniture</h1>
    </div> 
     <nav id="nav-bar">
       <ul>
-        <li><a class="nav-link" href="#information">Product information</a></li>
-        <li><a class="nav-link" href="#is-pine-for-you">Is pine furniture for you?</a></li>
+        <li><a class="nav-link" href="#information">Information</a></li>
+        <li><a class="nav-link" href="#is-pine-for-you">Video</a></li>
         <li><a class="nav-link" href="#prices">Prices</a></li>
       </ul>
     </nav>
@@ -351,7 +351,7 @@
                   <h2>Small chair</h2>
                 </div>
                 <ol>
-                  <li class="the-price"><p>80 DKK</p></li>
+                  <li class="the-price"><p><b>80 DKK</b></p></li>
                   <li>Lorem ipsum.</li>
                   <li>Lorem ipsum.</li>
                   <li>Lorem ipsum.</li>
@@ -364,7 +364,7 @@
                 <h2>Medium chair</h2>
               </div>
               <ol>
-                  <li class="the-price"><p>130 DKK</p></li>
+                  <li class="the-price"><p><b>130 DKK</b></p></li>
                   <li>Lorem ipsum.</li>
                   <li>Lorem ipsum.</li>
                   <li>Lorem ipsum.</li>
@@ -377,7 +377,7 @@
                 <h2>Large chair</h2>
               </div>
               <ol>
-                  <li class="the-price"><p>199 DKK</p></li>
+                  <li class="the-price"><p><b>199 DKK</b></p></li>
                   <li>Lorem ipsum.</li>
                   <li>Lorem ipsum.</li>
                   <li>Lorem ipsum.</li>
@@ -411,6 +411,6 @@
 
 
   <div id="app"></div>
-  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
 
 </html>
