@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=1000; user-scalable=0;>
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Pine Furniture</title>
   <style>
@@ -236,10 +236,13 @@
       width: 100%
     }
 
-    @media screen and (max-width: 520px) {
-      .sticky {
-        height: 9%;
-      }
+    @media screen and (max-width: 600px) {
+      #header {
+        overflow: hidden;
+        margin-bottom: 2px;
+        z-index: 0;
+        }
+
       #top-box {
         margin-top: 4px;
         margin-left: 20%;
@@ -282,6 +285,7 @@
         margin-right: 10%;
         margin-left: 10%;
       }
+
 
     }
 
