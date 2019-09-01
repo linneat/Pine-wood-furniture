@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=1000; user-scalable=0;>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Pine Furniture</title>
   <style>
@@ -236,12 +236,21 @@
       width: 100%
     }
 
-    @media screen and (max-width: 600px) {
+    @media only screen and (max-width: 767px){
       #header {
         overflow: hidden;
-        margin-bottom: 2px;
-        z-index: 0;
-        }
+        margin-bottom: 1px;
+        z-index: 1;
+      }
+
+      .sticky {
+        position: fixed;
+        top: 0;
+        background-color: #A4DCE1 !important;
+        width: 100%;
+        height: 10%; 
+      }
+
 
       #top-box {
         margin-top: 4px;
@@ -291,114 +300,114 @@
 
 
   </style>
-</head>
-<div id="page-wrapper">
-  <header id="header" class="sticky">
-    <div class="logo-name" >
-      <img id="header-img" src="https://raw.githubusercontent.com/linneat/Pine-wood-furniture/master/chair.png">
-      <h1 id="name">Pine Furniture</h1>
-   </div> 
-    <nav id="nav-bar">
-      <ul>
-        <li><a class="nav-link" href="#information">Information</a></li>
-        <li><a class="nav-link" href="#is-pine-for-you">Video</a></li>
-        <li><a class="nav-link" href="#prices">Prices</a></li>
-      </ul>
-    </nav>
-  </header>
-  <body>
-    <div id="wrap-top">
-      <form id="form" action="https://www.freecodecamp.com/email-submit">
-        <div id="top-heading">
-          <div id="first-top-heading">
-            <h2>Pine wood furniture</h2>
-          </div>
-          <div id="top-box">
-            <div id="second-top-heading">
-              <p>Enter your email and get a 20% discount code</p>
+<body>
+  </head>
+  <div id="page-wrapper">
+    <header id="header" class="sticky">
+      <div class="logo-name" >
+        <img id="header-img" src="https://raw.githubusercontent.com/linneat/Pine-wood-furniture/master/chair.png">
+        <h1 id="name">Pine Furniture</h1>
+     </div> 
+      <nav id="nav-bar">
+        <ul>
+          <li><a class="nav-link" href="#information">Information</a></li>
+          <li><a class="nav-link" href="#is-pine-for-you">Video</a></li>
+          <li><a class="nav-link" href="#prices">Prices</a></li>
+        </ul>
+      </nav>
+    </header>
+      <div id="wrap-top">
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <div id="top-heading">
+            <div id="first-top-heading">
+              <h2>Pine wood furniture</h2>
             </div>
-            <div id="input">
-              <input type="email" name="email" id="email" placeholder="Please enter your email"></input>
-              <input class="submit" id="submit" type="submit" value="send"></input>
+            <div id="top-box">
+              <div id="second-top-heading">
+                <p>Enter your email and get a 20% discount code</p>
+              </div>
+              <div id="input">
+                <input type="email" name="email" id="email" placeholder="Please enter your email"></input>
+                <input class="submit" id="submit" type="submit" value="send"></input>
+              </div>
             </div>
           </div>
+        </form>
+      </div>
+
+      <div class="flex-container">
+        <div id="info-wrap">
+        <section id="information">
+          
+            <h2>Information</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet mattis vulputate enim nulla aliquet porttitor lacus. Tempor orci dapibus ultrices in iaculis. Etiam tempor orci eu lobortis elementum nibh tellus. Neque sodales ut etiam sit amet nisl purus. Accumsan tortor posuere ac ut consequat semper viverra nam. Orci dapibus ultrices in iaculis nunc sed augue lacus. Duis convallis convallis tellus id. Ac tincidunt vitae semper quis lectus nulla at. Sed ullamcorper morbi tincidunt ornare. Accumsan lacus vel facilisis volutpat est. Dolor magna eget est lorem ipsum dolor sit amet consectetur. Sit amet tellus cras adipiscing enim eu. Sed enim ut sem viverra aliquet eget sit. Eget duis at tellus at urna condimentum mattis pellentesque id. Gravida cum sociis natoque penatibus et magnis dis. Tempor orci dapibus ultrices in iaculis nunc sed. Risus feugiat in ante metus. Lorem dolor sed viverra ipsum.</p>
+            <p>
+            Egestas tellus rutrum tellus pellentesque eu tincidunt tortor. Sit amet consectetur adipiscing elit duis. Nisi scelerisque eu ultrices vitae auctor eu augue ut. Nibh tortor id aliquet lectus proin. Viverra justo nec ultrices dui sapien eget mi proin. Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Tortor posuere ac ut consequat. Porttitor rhoncus dolor purus non enim praesent elementum facilisis leo. Sed arcu non odio euismod lacinia at quis risus. Vitae sapien pellentesque habitant morbi tristique senectus et netus. Non quam lacus suspendisse faucibus interdum posuere lorem. Senectus et netus et malesuada. In vitae turpis massa sed elementum tempus egestas sed. Sed adipiscing diam donec adipiscing tristique. Urna condimentum mattis pellentesque id nibh tortor id aliquet lectus. Bibendum enim facilisis gravida neque convallis a cras semper.</p>
+            <p>
+            Non arcu risus quis varius. Potenti nullam ac tortor vitae purus faucibus ornare suspendisse sed. Turpis egestas integer eget aliquet. A cras semper auctor neque vitae tempus quam pellentesque nec. Ut consequat semper viverra nam libero justo. Suspendisse in est ante in nibh mauris cursus mattis. At elementum eu facilisis sed odio. Pretium viverra suspendisse potenti nullam ac tortor vitae purus faucibus. Aliquet lectus proin nibh nisl condimentum id venenatis. Blandit massa enim nec dui nunc mattis enim ut tellus. Mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Phasellus vestibulum lorem sed risus. Sollicitudin ac orci phasellus egestas tellus rutrum. Malesuada fames ac turpis egestas integer eget aliquet. At erat pellentesque adipiscing commodo elit at. A arcu cursus vitae congue mauris.
+            </p>
+        </section>
         </div>
-      </form>
-    </div>
-
-    <div class="flex-container">
-      <div id="info-wrap">
-      <section id="information">
         
-          <h2>Information</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet mattis vulputate enim nulla aliquet porttitor lacus. Tempor orci dapibus ultrices in iaculis. Etiam tempor orci eu lobortis elementum nibh tellus. Neque sodales ut etiam sit amet nisl purus. Accumsan tortor posuere ac ut consequat semper viverra nam. Orci dapibus ultrices in iaculis nunc sed augue lacus. Duis convallis convallis tellus id. Ac tincidunt vitae semper quis lectus nulla at. Sed ullamcorper morbi tincidunt ornare. Accumsan lacus vel facilisis volutpat est. Dolor magna eget est lorem ipsum dolor sit amet consectetur. Sit amet tellus cras adipiscing enim eu. Sed enim ut sem viverra aliquet eget sit. Eget duis at tellus at urna condimentum mattis pellentesque id. Gravida cum sociis natoque penatibus et magnis dis. Tempor orci dapibus ultrices in iaculis nunc sed. Risus feugiat in ante metus. Lorem dolor sed viverra ipsum.</p>
-          <p>
-          Egestas tellus rutrum tellus pellentesque eu tincidunt tortor. Sit amet consectetur adipiscing elit duis. Nisi scelerisque eu ultrices vitae auctor eu augue ut. Nibh tortor id aliquet lectus proin. Viverra justo nec ultrices dui sapien eget mi proin. Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Tortor posuere ac ut consequat. Porttitor rhoncus dolor purus non enim praesent elementum facilisis leo. Sed arcu non odio euismod lacinia at quis risus. Vitae sapien pellentesque habitant morbi tristique senectus et netus. Non quam lacus suspendisse faucibus interdum posuere lorem. Senectus et netus et malesuada. In vitae turpis massa sed elementum tempus egestas sed. Sed adipiscing diam donec adipiscing tristique. Urna condimentum mattis pellentesque id nibh tortor id aliquet lectus. Bibendum enim facilisis gravida neque convallis a cras semper.</p>
-          <p>
-          Non arcu risus quis varius. Potenti nullam ac tortor vitae purus faucibus ornare suspendisse sed. Turpis egestas integer eget aliquet. A cras semper auctor neque vitae tempus quam pellentesque nec. Ut consequat semper viverra nam libero justo. Suspendisse in est ante in nibh mauris cursus mattis. At elementum eu facilisis sed odio. Pretium viverra suspendisse potenti nullam ac tortor vitae purus faucibus. Aliquet lectus proin nibh nisl condimentum id venenatis. Blandit massa enim nec dui nunc mattis enim ut tellus. Mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Phasellus vestibulum lorem sed risus. Sollicitudin ac orci phasellus egestas tellus rutrum. Malesuada fames ac turpis egestas integer eget aliquet. At erat pellentesque adipiscing commodo elit at. A arcu cursus vitae congue mauris.
-          </p>
-      </section>
-      </div>
-      
-      <div id="wrap-video">
-        <section id="is-pine-for-you">
-          <h2>Is pine for you?</h2>
-          <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/p76P-3Fyd4I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </section>
-      </div>
+        <div id="wrap-video">
+          <section id="is-pine-for-you">
+            <h2>Is pine for you?</h2>
+            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/p76P-3Fyd4I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </section>
+        </div>
 
-      <div id="wrap-prices">
-        <section id="prices">
-          <div class="prices">
-            <h2>Prices</h2>
-            <p>Free shipping for orders of minimum 100 dkk</p>
-            <div id="inner-wrap-prices">
-              <div id="small-funiture" class="inner-table">
-                <div class="small-heading">
-                  <h2>Small chair</h2>
+        <div id="wrap-prices">
+          <section id="prices">
+            <div class="prices">
+              <h2>Prices</h2>
+              <p>Free shipping for orders of minimum 100 dkk</p>
+              <div id="inner-wrap-prices">
+                <div id="small-funiture" class="inner-table">
+                  <div class="small-heading">
+                    <h2>Small chair</h2>
+                  </div>
+                  <ol>
+                    <li class="the-price"><p><b>80 DKK</b></p></li>
+                    <li>Lorem ipsum.</li>
+                    <li>Lorem ipsum.</li>
+                    <li>Lorem ipsum.</li>
+                    <li>Lorem ipsum.</li>
+                    <li><input id="buy1" class="buy" type="submit" value="buy"></li>
+                  </ol>
                 </div>
-                <ol>
-                  <li class="the-price"><p><b>80 DKK</b></p></li>
-                  <li>Lorem ipsum.</li>
-                  <li>Lorem ipsum.</li>
-                  <li>Lorem ipsum.</li>
-                  <li>Lorem ipsum.</li>
-                  <li><input id="buy1" class="buy" type="submit" value="buy"></li>
-                </ol>
-              </div>
-              <div id="medium-funiture" class="inner-table">
-                <div class="small-heading">
-                  <h2>Medium chair</h2>
+                <div id="medium-funiture" class="inner-table">
+                  <div class="small-heading">
+                    <h2>Medium chair</h2>
+                  </div>
+                  <ol>
+                    <li class="the-price"><p><b>130 DKK</b></p></li>
+                    <li>Lorem ipsum.</li>
+                    <li>Lorem ipsum.</li>
+                    <li>Lorem ipsum.</li>
+                    <li>Lorem ipsum.</li>
+                    <li><input id="buy2" class="buy" type="submit" value="buy"></li>
+                  </ol>
                 </div>
-                <ol>
-                  <li class="the-price"><p><b>130 DKK</b></p></li>
-                  <li>Lorem ipsum.</li>
-                  <li>Lorem ipsum.</li>
-                  <li>Lorem ipsum.</li>
-                  <li>Lorem ipsum.</li>
-                  <li><input id="buy2" class="buy" type="submit" value="buy"></li>
-                </ol>
-              </div>
-              <div id="large-funiture" class="inner-table">
-                <div class="small-heading">
-                  <h2>Large chair</h2>
+                <div id="large-funiture" class="inner-table">
+                  <div class="small-heading">
+                    <h2>Large chair</h2>
+                  </div>
+                  <ol>
+                    <li class="the-price"><p><b>199 DKK</b></p></li>
+                    <li>Lorem ipsum.</li>
+                    <li>Lorem ipsum.</li>
+                    <li>Lorem ipsum.</li>
+                    <li>Lorem ipsum.</li>
+                    <li><input id="buy3" class="buy" type="submit" value="buy"></li>
+                  </ol>
                 </div>
-                <ol>
-                  <li class="the-price"><p><b>199 DKK</b></p></li>
-                  <li>Lorem ipsum.</li>
-                  <li>Lorem ipsum.</li>
-                  <li>Lorem ipsum.</li>
-                  <li>Lorem ipsum.</li>
-                  <li><input id="buy3" class="buy" type="submit" value="buy"></li>
-                </ol>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
+        </div>
       </div>
-    </div>
-    <div id="app">
-    </div>
-    <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+      <div id="app">
+      </div>
+      <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
   </body>
 </html>
